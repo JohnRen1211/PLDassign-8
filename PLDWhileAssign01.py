@@ -42,4 +42,14 @@ while True:
     print("Opps Loss Try again for more chance of winning lottery")
 
  restart=input("Restart the program enter Y to reset or N to exit: ")
- 
+ if restart.upper() == "Y": # restart program
+     continue
+ elif restart == "N":
+   print("program exit file")
+   print("The program successfully processed")
+ elif restart != "Y" or "N":
+     print("Put valid value")
+     print("The program successfully processed")
+ break 
+
+# The program run smoothly
