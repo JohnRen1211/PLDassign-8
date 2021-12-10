@@ -6,3 +6,15 @@
 #Making command to continue
 print("To run the lottery press ""Y"" or ""N"" to exit the program")  
 
+response = input("Response: ")
+if response == ("Y"):
+    print("Continue to the survey")
+elif response == ("N"):
+    print("Okay,then rest")
+    raise SystemExit
+elif response != "Y" or "N":
+    print("Put Valid Value")
+    raise SystemExit
+
+# Program for while loop back
+while True:
