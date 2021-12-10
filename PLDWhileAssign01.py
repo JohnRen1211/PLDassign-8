@@ -18,3 +18,28 @@ elif response != "Y" or "N":
 
 # Program for while loop back
 while True:
+
+# Program for 3 random numbers input Wonderful Program Wonderful Program
+ import random
+ def lottery_pick():
+     for numbers  in enumerate(range(3)):
+        ran_num1 = random.randint(0,9)
+        ran_num2 = random.randint(0,9)
+        ran_num3 = random.randint(0,9)
+        return ran_num1, ran_num2, ran_num3
+
+ def display(ran_num1, ran_num2, ran_num3):
+    print(f"The lottery number combination are: {ran_num1}, {ran_num2}, {ran_num3}")
+ ran_num1, ran_num2, ran_num3 =lottery_pick()
+ display(ran_num1, ran_num2, ran_num3)
+
+
+ if (ran_num1 == ran_num2 and ran_num1 == ran_num3):
+    print ("Congratulation Winner")
+    print("The program successfully processed")
+    raise SystemExit
+ elif (ran_num1 != ran_num2 and ran_num3):
+    print("Opps Loss Try again for more chance of winning lottery")
+
+ restart=input("Restart the program enter Y to reset or N to exit: ")
+ 
