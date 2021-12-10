@@ -8,7 +8,21 @@
 # Making command to continue
 print("To run the guessing program press ""Y"" to continue or ""N"" to exit the program")  
 
+response = input("Response: ")
+if response == ("Y"):
+    print("Continue to the program")
+elif response == ("N"):
+    print("Okay,then rest")
+    raise SystemExit
+elif response != "Y" or "N":
+    print("Put Valid Value")
+    raise SystemExit
 
+# Coding while loop for loop back
+while True:
+
+ import random
+# Program for random number
 
 
 
