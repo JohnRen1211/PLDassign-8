@@ -27,7 +27,14 @@ while True:
 # print hidden_val turn is a comment to hide the generated value to show it just remove the # in the line and put the # back to hide it
 
 #  print(hidden_val)  
+ guess_num = int(input("Enter guess number forn 0 to 100 value: "))
 
-
-
-
+ if guess_num == hidden_val:
+   print("Hidden value correctly guessed")
+   print("The program successfully processed")
+   raise SystemExit
+ elif guess_num <= hidden_val:
+   print("The number given is less than the hidden value")
+ elif guess_num >= hidden_val:
+   print("The number given is greater than the hidden value")
+# The restart button for loop back program
