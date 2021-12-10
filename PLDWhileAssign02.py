@@ -23,6 +23,10 @@ while True:
 
  import random
 # Program for random number
+ hidden_val = random.randint(0,100)
+# print hidden_val turn is a comment to hide the generated value to show it just remove the # in the line and put the # back to hide it
+
+#  print(hidden_val)  
 
 
 
