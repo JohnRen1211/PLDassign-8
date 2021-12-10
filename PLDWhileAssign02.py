@@ -38,3 +38,14 @@ while True:
  elif guess_num >= hidden_val:
    print("The number given is greater than the hidden value")
 # The restart button for loop back program
+ restart=input("Restart the program enter Y to reset or N to exit: ")
+ if restart.upper() == "Y": # restart program
+     continue
+ elif restart == "N":
+   print("program exit file")
+ elif restart != "Y" or "N":
+     print("Put valid value")
+ break 
+
+# The program run smoothly
+print("The program successfully processed") 
